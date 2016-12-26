@@ -24,11 +24,28 @@
 
       </header>
       <section>
+
+<h3><a name="Dec.26.2016" class="anchor" href="#Dec.26.2016"><span class="octicon octicon-link"></span></a>Dec.26.2016</h3>
+<h3><a name="Android：adb logcat" class="anchor" href="#Android：adb logcat"><span class="octicon octicon-link"></span></a><font color="gray">Android：adb logcat</font></h3>
+<p><font color="#000000">
+How to install apk with device designation when there are multiple devices with adb logcat.
+</font></p>
+<pre><code>
+C:\Users\ave>adb devices
+List of devices attached
+AAAAAAAAA       devices
+BBBBBBBBB       devices
+
+C:\Users\ave>adb -s BBBBBBBBB install -r C:\Users\ave\Downloads\com.ave.android-release.apk
+
+</code></pre>
+        
         
 <h3><a name="Dec.15.2016" class="anchor" href="#Dec.15.2016"><span class="octicon octicon-link"></span></a>Dec.15.2016</h3>
 <h3><a name="Android：AndroidStudio error" class="anchor" href="#Android：AndroidStudio error"><span class="octicon octicon-link"></span></a><font color="gray">Android：AndroidStudio error</font></h3>
 <p><font color="#000000">
-If you see the error log "Gradle sync failed: Failed to find target with hash string 'Google Inc.:Google APIs: 10'" on Android Studio error, you can install the API you specified from the SDK manager.</font></p>
+If you see the error log "Gradle sync failed: Failed to find target with hash string 'Google Inc.:Google APIs: 10'" on Android Studio error, you can install the API you specified from the SDK manager.
+  </font></p>
 <p>1: Open "SDKManager"<br>
 2: Click on "Lanuch Standalone SDK Manager"<br>
 3: Install API to be specified from SDK<br></p>    
@@ -86,7 +103,7 @@ $ →　imgcahe
         <p>Confirmation of device : <font color="#000000">adb devices</font>
         <br>Clear log : <font color="#000000">adb logcat -c</font>
         <br>Clear of device : <font color="#000000">adb -s abcdefghijglm logcat -c</font>
-        <br>The log to a text and It describes the output time : <font color="#000000">adb -s abcdefghijglm logcat -v time > Ave.txt</font></p>
+        <br>The log to a text and It describes the output time : <font color="#000000">adb -s abcdefghijglm logcat -v time > Ave.txt</font></p>       
         
 <h3><a name="Nov.22.2013" class="anchor" href="#Nov.22.2013"><span class="octicon octicon-link"></span></a>Nov.22.2013</h3>
 
@@ -125,7 +142,7 @@ $ git checkout gh-pages
 <a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a><font color="cyan">Contact</font></h3>
 <p>Having love with Pages? Check out the documentation at <a href="https://hitoshiave.github.io">https://hitoshiave.github.io</a> or contact <a href="mailto:hitoshiave@gmail.com">hitoshiave@gmail.com</a> and we’ll help you sort it out.</p>
         
-<p class="view"><a href="#Dec.15.2016">TOP</a></p>
+<p class="view"><a href="#Dec.26.2016">TOP</a></p>
         
       </section>
       <footer>
