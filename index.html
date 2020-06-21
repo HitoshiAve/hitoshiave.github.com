@@ -49,11 +49,11 @@ In Android Studio, open the settings editor by going to File > Other Settings > 
 (Or Settings for New Projects. The text varies between versions of Android Studio.)
 Select Auto Import. In the Java and Kotlin sections, make sure Add Unambiguous Imports on the fly is checked.
 
-view.findViewById<Button>(R.id.toast_button).setOnClickListener {
+view.findViewById<Button>(R.id.toast_button).setOnClickListener /
    val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
 
    myToast.show()
-}
+/
 
 </code></pre> 
 </font></p> 
