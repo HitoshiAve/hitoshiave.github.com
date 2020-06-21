@@ -29,16 +29,17 @@
      
 <h3><a name="June.21, 2020" class="anchor" href="#June.21, 2020"><span class="octicon octicon-link"></span></a>June.21, 2020</h3>
 <h3><a name="#HappyFathersDay" class="anchor" href="#HappyFathersDay"><span class="octicon octicon-link"></span></a><font color="Cyan">#HappyFathersDay</font></h3>
-<p><font color="#000000">
-もし父が生きてたらきっと母親もよんで
-何か美味しい料理を食べ東京を楽しんだだろう
+<p><font color="#000000"><br>
+もし父が生きてたらきっと母親もよんで<br>
+何か美味しい料理を食べ東京を楽しんだだろう<br><br>
+自分が生きてることに感謝<br>
+</p>
 
-自分が生きてることに感謝
-<br /></p>  
 <h3><a name="Enable auto imports" class="anchor" href="Enable auto imports"><span class="octicon octicon-link"></span></a><font color="violet">Enable auto imports</font></h3>
 <p><font color="#000000">
-KotlinでAndroid Studioを使用する際に自動インポートするのがGoogle公式“codelabs.developers.google.com/”コードラボのカリキュラムの中で推奨されてたのでそのメモ
-このインポートでできることの一つとしてTOASTをIMPORTしてくる事が簡単にできる
+KotlinでAndroid Studioを使用する際に自動インポートするのが<br>
+Google公式コードラボのカリキュラムの中で推奨されてたのでそのメモ<br>
+このインポートでできることの一つとしてTOASTをIMPORTしてくる事が簡単にできる<br>
     <br /></p> 
 <pre><code>
 To make your life easier, you can enable auto-imports so that Android Studio automatically imports any classes that are needed by the Kotlin code.
@@ -47,11 +48,9 @@ In Android Studio, open the settings editor by going to File > Other Settings > 
 (Or Settings for New Projects. The text varies between versions of Android Studio.)
 Select Auto Import. In the Java and Kotlin sections, make sure Add Unambiguous Imports on the fly is checked.
 
-// find the toast_button by its ID and set a click listener
 view.findViewById<Button>(R.id.toast_button).setOnClickListener {
-   // create a Toast with some text, to appear for a short time
    val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
-   // show the Toast
+
    myToast.show()
 }
 
