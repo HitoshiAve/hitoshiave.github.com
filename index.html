@@ -32,19 +32,28 @@
 <h3><a name="Your sided dice rolled" class="anchor" href="Your sided dice rolled"><span class="octicon octicon-link"></span></a><font color="indigo">Your sided dice rolled</font></h3>
 <p><font color="#4b0082"><!-- <br> -->
 <pre><code>
-"Your 6 sided dice rolled X!"
+"Your 7 sided dice rolled X!"
+"Your 30 sided dice rolled X!"
+"Your 100 sided dice rolled X!"
+
 fun main() {
+   
     val myFirstDice = Dice()
     val diceRoll = myFirstDice.roll()
     println("Your ${myFirstDice.sides} sided dice rolled ${diceRoll}!")
+
+    myFirstDice.sides = 30
+    println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+    
+    myFirstDice.sides = 100
+    println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
 }
 
-
 class Dice {
-    var sides = 6
+    var sides = 7
 
     fun roll(): Int {
-        val randomNumber = (1..6).random()
+        val randomNumber = (1..sides).random()
         return randomNumber
     }
 }
