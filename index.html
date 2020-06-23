@@ -34,27 +34,19 @@
 <pre><code>
 "Your 7 sided dice rolled X!"
 "Your 30 sided dice rolled X!"
-"Your 100 sided dice rolled X!"
 
 fun main() {
-   
-    val myFirstDice = Dice()
-    val diceRoll = myFirstDice.roll()
-    println("Your ${myFirstDice.sides} sided dice rolled ${diceRoll}!")
-
-    myFirstDice.sides = 30
-    println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+    val myFirstDice = Dice(7)
+    println("Your ${myFirstDice.numSides} sided dice rolled ${myFirstDice.roll()}!")
     
-    myFirstDice.sides = 100
-    println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+    val mySecondDice = Dice(30)
+    println("Your ${mySecondDice.numSides} sided dice rolled ${mySecondDice.roll()}!")
 }
 
-class Dice {
-    var sides = 7
+class Dice (val numSides: Int) {
 
     fun roll(): Int {
-        val randomNumber = (1..sides).random()
-        return randomNumber
+        return (1..numSides).random()
     }
 }
 </code></pre>
