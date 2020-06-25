@@ -28,6 +28,41 @@
       </header>
       <section>
 	      
+<h3><a name="June.25, 2020" class="anchor" href="#June.25, 2020"><span class="octicon octicon-link"></span></a>June.25, 2020</h3>
+<h3><a name="Create some functions" class="anchor" href="Create some functions"><span class="octicon octicon-link"></span></a><font color="indigo">Create some functions</font></h3>
+<p><font color="#4b0082"><!-- <br> -->
+<pre><code>
+"Today is Thursday and the fish eat granules"
+import java.util.*    // required import
+
+fun randomDay() : String {
+    val week = arrayOf ("Monday", "Tuesday", "Wednesday", "Thursday",
+        "Friday", "Saturday", "Sunday")
+    return week[Random().nextInt(week.size)]
+}
+
+fun fishFood (day : String) : String {
+    return when (day) {
+        "Monday" -> "flakes"
+        "Wednesday" -> "redworms"
+        "Thursday" -> "granules"
+        "Friday" -> "mosquitoes"
+        "Sunday" -> "plankton"
+        else -> "nothing"
+    }
+}
+
+fun feedTheFish() {
+    val day = randomDay()
+    val food = fishFood(day)
+    println ("Today is $day and the fish eat $food")
+}
+
+fun main(args: Array<String>) {
+    feedTheFish()
+}
+</code></pre>
+	
 <h3><a name="June.23, 2020" class="anchor" href="#June.23, 2020"><span class="octicon octicon-link"></span></a>June.23, 2020</h3>
 <h3><a name="Your sided dice rolled" class="anchor" href="Your sided dice rolled"><span class="octicon octicon-link"></span></a><font color="indigo">Your sided dice rolled</font></h3>
 <p><font color="#4b0082"><!-- <br> -->
